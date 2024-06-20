@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0;
+    background: url(/images/pattern.png);
+}
+
+header{
+height: 90px;
+background: #ffffff;
+}
+
+header h1{
+    display: inline-block;
+    padding: 20px 3px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #00594f;
+}
+
+header ul{
+    float: right;
+}
+
+header ul li{
+    padding: 28px 12px 0 12px;
+    display: inline-block;
+}
+
+header ul li a{
+    color: #00594f;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header ul li a:hover{
+    color: gray;
+}
+
+header .active a{
+    font-weight: bold;
+    color: #00594f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bar{
+    width: 85%;
+    margin: auto;
+}
+
+.bar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tagline {
+    background-color: #e8dfce;
+    color:#00594f;
+    padding: 20px 110px 70px 110px;
+    text-align: left;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline_2 {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    column-gap: 40px;
+}
+
+.visi {
+    padding-top: 50px;
+}
+
+.misi {
+    padding-top: 50px;
+}
+
+.page_buttons {
+  text-align: right;
+}
+
+main {
+    padding: 0px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+.historytitle {
+    text-align: left;
+    font-size: 25px;
+    color: #00594f;
+    font-weight: bold;
+}
+
+.history {
+    padding: 50px;
+    color:#00594f;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    width: 85%;
+    margin: auto;
+}
+
+main div img {
+    border-radius: 10px;
+    box-shadow: 10px 10px #e8dfce;
+}
+
+.tahun {
+    text-align: justify;
+    padding-top: 100px;
+}
+
+.ourteam {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px auto;
+background-color: #e8dfce;
+color:#00594f;
+
+}
+
+
+.info_team {
+margin: 100px;
+padding-right: 100px;
+}
+
+.head_team{
+padding-bottom: 70px;
+font-size: 50px;
+color: #00594f;
+font-weight: bold;
+
+}
+
+.coffee_img {
+padding: 50px;
+text-align: center;
+margin-left: auto;
+
+}
+
+footer {
+    background-color: #e8dfce;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00594f;
+    height: 350px;
+    column-gap: 150px;
+}
+    
+footer div a {
+    color: #00594f;
+}
+    
+footer div a:hover {
+    color: #ffffff;
+}
+    
+.footer_img {
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.hr {
+    border: 1.8px solid #00594f;
+    width: 380%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+color: #666;
+margin: 0;
+}
+
+hr {
+    border-top: 1px solid #00594f;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.teamtitle {
+    text-align: center; 
+    padding-top: 50px;
+    font-size: 40px; 
+    color: #00594f; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.team {
+    align-items: center;
+}
+
+.image {
+    position: right;
+}
+
+.cards {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0% 0%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    z-index: 20;
+}
+
+
+.card-title img {
+    width: auto;
+    height: 28vh;
+    border-radius: 10px;
+    border-color: #00594f;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 10px 10px #00594f;
+
+}
+
+.card-m {
+    width: 85%;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.card-s {
+    background: #e8dfce;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px #00594f;
+
+}
+
+.card-img {
+    height: 310px;
+    overflow: hidden;
+    
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.5s;
+    scale: 1.3;
+}
+
+.card-img img:hover{
+    transform: scale(1.3);
+}
+
+.card-info {
+    padding: 20px 16px 16px;
+}
+
+.card-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    line-height: 0.8;
+}
+
+.card-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    margin-top: 8px;
+    line-height: 0.9;
+}
+
+.card-price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #00594f;
+    margin-top: 5px;
+}

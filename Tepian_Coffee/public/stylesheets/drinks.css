@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0;
+}
+
+header{
+height: 90px;
+background: #ffffff;
+}
+
+header h1{
+    display: inline-block;
+    padding: 20px 3px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #00594f;
+}
+
+header ul{
+    float: right;
+}
+
+header ul li{
+    padding: 28px 12px 0 12px;
+    display: inline-block;
+}
+
+header ul li a{
+    color: #00594f;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header ul li a:hover{
+    color: gray;
+}
+
+header .active a{
+    font-weight: bold;
+    color: #00594f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bar{
+    width: 85%;
+    margin: auto;
+}
+
+.bar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tagline {
+    background: url(/images/drinks_tag.png) ;
+    color:#00594f;
+    padding: 100px;
+    text-align: left;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.page_buttons {
+  text-align: right;
+}
+
+main {
+    padding: 0px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+.drinkstitle {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+    color: #00594f;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+main div h3 {
+    background: url(/images/cpattern.png);
+    border: 5px #e8dfce;
+    border-radius: 10px 10px 0 0;
+    width: 30%;
+    margin: auto;
+}
+
+.drinks {
+    padding: 50px;
+    color:#00594f;
+    background-color: #e8dfce;
+    padding-bottom: 50px;
+    text-align: justify;
+    background: url(/images/cpattern.png);
+}
+
+.filosofi {
+    width: 85%;
+    margin: auto;
+}
+
+.filosofi_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    padding-top: 70px;
+}
+
+.filosofi_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    text-align: right;
+    padding-top: 70px;
+}
+
+.coffee_img {
+padding: 50px;
+text-align: center;
+margin-left: auto;
+
+}
+
+footer {
+    background-color: #e8dfce;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00594f;
+    height: 350px;
+    column-gap: 150px;
+}
+    
+footer div a {
+    color: #00594f;
+}
+    
+footer div a:hover {
+    color: #ffffff;
+}
+    
+.footer_img {
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.hr {
+    border: 1.8px solid #00594f;
+    width: 380%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+color: #666;
+margin: 0;
+}
