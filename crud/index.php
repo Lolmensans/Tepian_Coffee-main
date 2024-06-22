@@ -55,8 +55,9 @@
                         <td><?php echo $data["Description"]; ?></td>
                         <td>
                             <a href="update.php?ID=<?php echo htmlspecialchars($data['ID']); ?>" class="btn btn-warning" role="button">Update</a>
-                            <a href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>?ID=<?php echo $data['ID']; ?>" class="btn btn-danger" role="button">Delete</a>
+                            <a href="index.php?ID=<?php echo htmlspecialchars($data['ID']); ?>" class="btn btn-danger" role="button">Delete</a>
                         </td>
+
                     </tr>
                 <?php
                 }

@@ -10,7 +10,6 @@
  
     include "koneksi.php";
 
-
     function input($data) {
         $data = trim($data);
         $data = stripslashes($data);
@@ -26,8 +25,7 @@
         $Price=input($_POST["Price"]);
         $Description=input($_POST["Description"]);
 
-        $sql="insert into drinks (ID,Type,Product,Price,Description) values
-		('$$ID','$Type','$Product','$Price','$$Description')";
+        $sql="INSERT INTO drinks (ID,Type,Product,Price,Description) VALUES ('$ID','$Type','$Product','$Price','$Description')";
         $hasil=mysqli_query($kon,$sql);
 
         if ($hasil) {
@@ -35,38 +33,28 @@
         }
         else {
             echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
-
         }
-
     }
     ?>
     <h2>Input Data</h2>
 
-
     <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
         <div class="form-group">
             <label>Nama Produk:</label>
-            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Produk" required />
-
+            <input type="text" name="Product" class="form-control" placeholder="Masukan Nama Produk" required />
         </div>
         <div class="form-group">
             <label>Tipe:</label>
-            <input type="text" name="sekolah" class="form-control" placeholder="Masukan Tipe" required/>
+            <input type="text" name="Type" class="form-control" placeholder="Masukan Tipe" required/>
         </div>
        <div class="form-group">
-            <label>Jenis:</label>
-            <input type="text" name="jurusan" class="form-control" placeholder="Masukan Jenis Produk" required/>
-        </div>
-                </p>
-        <div class="form-group">
             <label>Harga:</label>
-            <input type="text" name="no_hp" class="form-control" placeholder="Masukan Harga" required/>
+            <input type="text" name="Price" class="form-control" placeholder="Masukan Harga" required/>
         </div>
         <div class="form-group">
-            <label>Deskripsi</label>
-            <textarea name="alamat" class="form-control" rows="5"placeholder="Masukan Deskripsi" required></textarea>
+            <label>Deskripsi:</label>
+            <textarea name="Description" class="form-control" rows="5" placeholder="Masukan Deskripsi" required></textarea>
         </div>       
-
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
